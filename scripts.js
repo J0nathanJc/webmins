@@ -11,6 +11,10 @@ const cartToggle = document.getElementById('cart-toggle');
 const buyButton = document.getElementById('buy-button');
 const pointsCountElement = document.querySelector('.points-count');
 
+document.getElementById('buy-button').addEventListener('click', function() {
+    window.location.href = 'inicioo.html'; 
+});
+
 function calculatePoints(price) {
     if (price >= 1500) {
         return 400;
